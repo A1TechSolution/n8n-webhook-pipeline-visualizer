@@ -192,9 +192,37 @@ body {
 @media (max-width: 900px) {
     .app-container {
         grid-template-columns: 1fr;
+        padding: 1.5rem 1rem;
+        gap: 1.25rem;
     }
     .config-panel, .canvas-panel, .inspector-panel {
         grid-column: span 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .app-header {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+    .nav-back-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    .node-canvas {
+        padding: 1.5rem 1rem;
+        overflow-x: auto;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .canvas-panel {
+        min-height: auto;
+    }
+    .node {
+        width: 280px;
+        flex-shrink: 0;
     }
 }
 
